@@ -1,4 +1,6 @@
 sudo: reuried
+
+language: generic
 services:
   - docker
 
