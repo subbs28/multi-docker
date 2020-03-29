@@ -22,4 +22,16 @@ after_success:
   - docker push subbs28/multi-server
   - docker push subbs28/multi-worker
 
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: us-east-1
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-east-1-353131849081
+  bucket_path: multi-docker
+  on:
+    branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
 
