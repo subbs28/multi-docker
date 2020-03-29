@@ -2,7 +2,7 @@
     "AWSEBDockerrunVersion": 2,
     "containerDefenitions": [
         {
-            "name": "client" ,
+            "name": "client",
             "image": "subbs28/multi-client",
             "hostname": "client",
             "essential": false
